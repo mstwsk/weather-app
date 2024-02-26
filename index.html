@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="current-search">
+      <form id="search-city">
+        <input
+          id="enter-city"
+          type="text"
+          class="text-placeholder"
+          placeholder="Enter a city"
+        />
+        <input type="submit" class="button-submit" value="Search" />
+      </form>
+      <div class="intro-current">
+        <div class="current-city">
+          <h1 id="current-city">London</h1>
+        </div>
+        <div class="description-current-weather">
+          Thick cloud and a gentle breeze <br />
+          Time:
+          <span id="current-time" class="introData">15:25</span>
+          Sunrise:
+          <span class="introData">08:03</span>
+          Sunset:
+          <span class="introData">16:14</span>
+        </div>
+        <div class="current-temperature">
+          Today <span id="today-temperature" class="introData">5°</span>
+        </div>
+        <img src="images/cloud.png" alt="cloud" />
+      </div>
+    </div>
+    <ul>
+      <div class="dayWeek">
+        <li class="day-of-the-week">
+          <span class="week">
+            <strong> Friday</strong>
+            <img src="images/cloud2.png" alt="cloud" />
+            <span class="temperature"><strong>7°</strong> 2°</span>
+          </span>
+        </li>
+      </div>
+      <div class="dayWeek">
+        <li class="day-of-the-week">
+          <span class="week">
+            <strong>Saturday</strong>
+            <img src="images/cloudy-day1.png" alt="cloud" />
+            <span class="temperature"><strong>6°</strong> 2°</span>
+          </span>
+        </li>
+      </div>
+      <div class="dayWeek">
+        <li class="day-of-the-week">
+          <span class="week">
+            <strong>Sunday </strong>
+            <img src="images/cloud3.png" alt="cloud" />
+            <span class="temperature"><strong>6°</strong> 0°</span>
+          </span>
+        </li>
+      </div>
+      <div class="dayWeek">
+        <li class="day-of-the-week">
+          <span class="week">
+            <strong>Monday </strong>
+            <img src="images/sun.png" alt="cloud" />
+            <span class="temperature"><strong>4°</strong> -2°</span>
+          </span>
+        </li>
+      </div>
+      <div class="dayWeek">
+        <li class="day-of-the-week">
+          <span class="week">
+            <strong>Tuesday </strong>
+            <img src="images/cloudy.png" alt="cloud" />
+            <span class="temperature"><strong>5°</strong> 1°</span>
+          </span>
+        </li>
+      </div>
+      <div class="dayWeek">
+        <li class="day-of-the-week">
+          <span class="week">
+            <strong>Wednesday </strong>
+            <img src="images/rain.png" alt="cloud" />
+            <span class="temperature"><strong>5°</strong> 2°</span>
+          </span>
+        </li>
+      </div>
+    </ul>
+    <footer>
+      <p>
+        This project was coded by
+        <a href="https://www.shecodes.io/graduates/106302-estelle-mostowski">
+          Estelle Mostowski
+        </a>
+      </p>
+    </footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
