@@ -18,3 +18,5 @@ document
     let apiURL = `https://api.shecodes.io/weather/v1/current?query=${cityName}&key=${apiKey}&units=${weatherUnit}`;
     axios.get(apiURL).then(displayintroData);
   });
+
+displayintroData("London");
