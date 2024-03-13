@@ -58,7 +58,8 @@ input[type="text"] {
 }
 
 .description-current-weather {
-  font-size: 18px;
+  font-size: 14px;
+  margin: 4px;
 }
 
 .introData {
