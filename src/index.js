@@ -5,10 +5,16 @@ function updateWeather(response) {
   let descriptionElement = document.querySelector(
     "#description-current-weather"
   );
+  let humidityElement = document.querySelector("#humidity");
+  let humidity = response.data.temperature.humidity;
+  let windElement = document.querySelector("#wind");
+  let wind = response.data.wind.speed;
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature) + "°";
   descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = humidity + "%";
+  windElement.innerHTML = Math.round(wind) + "km/h";
 }
 function searchCity(city) {
   let apiKey = "46df0bc13abce7403ee4b936f24tbeoa";
