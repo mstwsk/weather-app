@@ -2,20 +2,17 @@ function updateWeather(response) {
   let temperatureElement = document.querySelector("#today-temperature");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#current-city");
-  let descriptionElement = document.querySelector(
-    "#description-current-weather"
+  let humidityElement = document.querySelector(
+    "#description-current-weather #humidity"
   );
-  let humidityElement = document.querySelector("#humidity");
-  let windElement = document.querySelector("#wind");
+  let windElement = document.querySelector(
+    "#description-current-weather #wind"
+  );
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature) + "°";
-  descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
-
-  console.log(response);
-  console.log(response);
 }
 function searchCity(city) {
   let apiKey = "46df0bc13abce7403ee4b936f24tbeoa";
