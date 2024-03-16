@@ -44,7 +44,9 @@ function formatDate(date) {
     "Saturday",
   ];
   let weekday = days[date.getDay()];
-  // Return formatted date
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   return `${weekday}, ${hours}:${minutes}`;
 }
 
