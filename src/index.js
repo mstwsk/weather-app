@@ -10,17 +10,6 @@ function updateWeather(response) {
   let time = new Date(response.data.time * 1000);
   let weekdayElement = document.querySelector("#current-day");
 
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let today = new Date();
-
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature) + "°";
   descriptionElement.innerHTML = response.data.condition.description;
