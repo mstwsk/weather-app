@@ -58,7 +58,7 @@ input[type="text"] {
 }
 
 .description-current-weather {
-  font-size: 14px;
+  font-size: 15px;
   margin: 4px;
 }
 
@@ -70,12 +70,13 @@ input[type="text"] {
 .current-temperature {
   font-size: 50px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
-img[src="images/cloud.png"] {
-  position: relative;
-  right: 35px;
-  width: 50px;
+.weather-app-icon {
+  width: 100px;
+  height: 100px;
 }
 
 ul {
