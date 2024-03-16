@@ -5,12 +5,16 @@ function updateWeather(response) {
   let descriptionElement = document.querySelector("#current-description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
+  let timeElement = document.querySelector("#current-time");
+  let date = new Date(response.data.time * 1000);
+  console.log(response.data);
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature) + "°";
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
+  timeElement.innerHTML = `${date.getHours()}:${date.getMinutes()}`;
 }
 function searchCity(city) {
   let apiKey = "46df0bc13abce7403ee4b936f24tbeoa";
