@@ -9,7 +9,7 @@ function updateWeather(response) {
   let currentTime = new Date(response.data.time * 1000);
 
   cityElement.innerHTML = response.data.city;
-  timeElement = `${currentTime.getHours} ${currentTime.getMinutes}`;
+  timeElement = `${currentTime.getHours()} ${currentTime.getMinutes()}`;
   temperatureElement.innerHTML = Math.round(temperature) + "°";
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
