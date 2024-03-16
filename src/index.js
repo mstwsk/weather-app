@@ -6,7 +6,10 @@ function updateWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let timeElement = document.querySelector("#current-time");
-  let date = new Date(response.data.time * 1000);
+  let time = new Date(response.data.time * 1000);
+  let weekdayElement = document.querySelector("#current-day");
+  let weekday = new Date(response.data.time);
+
   console.log(response.data);
 
   cityElement.innerHTML = response.data.city;
@@ -14,7 +17,8 @@ function updateWeather(response) {
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
-  timeElement.innerHTML = `${date.getHours()}:${date.getMinutes()}`;
+  timeElement.innerHTML = `${time.getHours()}:${time.getMinutes()}`;
+  weekdayElement.innerHTML = `${weekday.getDay}`;
 }
 function searchCity(city) {
   let apiKey = "46df0bc13abce7403ee4b936f24tbeoa";
