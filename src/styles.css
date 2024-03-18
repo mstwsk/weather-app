@@ -52,7 +52,7 @@ input[type="text"] {
   justify-content: space-evenly;
   align-items: center;
 }
-.city h1 {
+.current-city h1 {
   font-size: 50px;
   margin: 0;
 }
@@ -62,7 +62,7 @@ input[type="text"] {
   margin: 4px;
 }
 
-.weather-data {
+.intro-data {
   color: #635985;
   font-weight: bold;
 }
