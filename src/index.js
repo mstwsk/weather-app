@@ -41,7 +41,29 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
+  let forecastHmtl = "";
+
+  days.forEach(function (day) {
+    forecastHmtl =
+      forecastHmtl +
+      `<li class="day-of-the-week">
+          <span class="week">
+            <strong>${day}</strong>
+            <img src="images/cloud2.png" alt="cloud" />
+            <span class="temperature"><strong>7°</strong> 2°</span>
+          </span>
+        </li>
+`;
+  });
+
+  forecastElement.innerHTML = forecastHmtl;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("London");
+displayForecast();
