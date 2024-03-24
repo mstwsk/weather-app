@@ -2,7 +2,7 @@ body {
   background-color: #18122b;
   width: 1040px;
   margin: 0 auto;
-  margin-top: 190px;
+  margin-top: 160px;
   font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
   color: white;
 }
@@ -104,7 +104,7 @@ ul {
   justify-content: center;
   background-color: rgba(99, 89, 133, 0.2);
   padding: 0;
-  margin: 0 -2px auto;
+  margin: 21px -2px auto;
   border-radius: 20px;
 }
 
@@ -124,52 +124,8 @@ strong {
   justify-content: space-between;
 }
 
-img[src="images/cloud2.png"] {
-  display: flex;
-  position: relative;
-  width: 25px;
-  right: -17px;
-  top: 3px;
-}
-
-img[src="images/cloudy-day1.png"] {
-  display: flex;
-  position: relative;
-  width: 25px;
-  right: -30px;
-  top: 3px;
-}
-
-img[src="images/cloud3.png"] {
-  display: flex;
-  position: relative;
-  width: 25px;
-  right: -22px;
-  top: 3px;
-}
-
-img[src="images/sun.png"] {
-  display: flex;
-  position: relative;
-  width: 25px;
-  right: -23px;
-  top: 3px;
-}
-
-img[src="images/cloudy.png"] {
-  display: flex;
-  position: relative;
-  width: 25px;
-  right: -26px;
-  top: 3px;
-}
-
-img[src="images/rain.png"] {
-  display: flex;
-  position: relative;
-  width: 25px;
-  right: -42px;
-  top: 3px;
+.forecast-app-icon {
+  width: 100%;
 }
 
 footer a {
