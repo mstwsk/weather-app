@@ -61,10 +61,11 @@ function displayForecast(response) {
 
   let forecastHmtl = "";
 
-  response.data.daily.forEach(function (day) {
-    forecastHmtl =
-      forecastHmtl +
-      `<div class="day-of-the-week">
+  response.data.daily.forEach(function (day, index) {
+    if (index > 0 && index < 7)
+      forecastHmtl =
+        forecastHmtl +
+        `<div class="day-of-the-week">
           <span class="week">
             <strong>${formatDay(day.time)}</strong>
             <img src="${day.condition.icon_url}" class="forecast-app-icon" />
